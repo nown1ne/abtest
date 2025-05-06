@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing - Variant A</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 text-gray-800">
+    <div class="max-w-4xl mx-auto py-16">
+      <h1 class="text-3xl font-bold text-center mb-8">Choose Your Plan (A)</h1>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-white p-6 rounded shadow">
+          <h2 class="text-xl font-semibold mb-4">Basic Plan</h2>
+          <p class="mb-4 text-gray-600">Free access with limited features</p>
+          <form action="/interact" method="post">
+            <input type="hidden" name="variant" value="A" />
+            <input type="hidden" name="event_type" value="conversion" />
+            <input type="hidden" name="plan" value="basic" />
+            <input type="hidden" name="revenue" value="0" />
+            <button
+              class="w-full bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+              type="submit"
+            >
+              Select
+            </button>
+          </form>
+        </div>
+        <div class="bg-white p-6 rounded shadow">
+          <h2 class="text-xl font-semibold mb-4">Pro Plan</h2>
+          <p class="mb-4 text-gray-600">$499/year with advanced analytics</p>
+          <form action="/interact" method="post">
+            <input type="hidden" name="variant" value="A" />
+            <input type="hidden" name="event_type" value="conversion" />
+            <input type="hidden" name="plan" value="pro" />
+            <input type="hidden" name="revenue" value="499" />
+            <button
+              class="w-full bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
+              type="submit"
+            >
+              Buy Now
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
